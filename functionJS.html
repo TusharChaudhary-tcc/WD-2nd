@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JS</title>
+</head>
+<body>
+    <script>
+        // function: block of code used or defined to perform specific task.
+        // By default functions are synchronious
+        // Types of Function                  
+        // Normal function:- with para, without parameters and with default parameters
+
+        // Normal function without parameters..
+        function demo(){
+            console.log("Hello JS");
+        }
+        demo();   //function calling
+
+        // With parameters
+        function demo1(text){
+            console.log("Hello "+ text);
+        }
+        demo1("React");
+
+        // Default Parameters
+        function sum(a,b=10){
+            console.log("Addition is " + (a+b));
+        }
+        sum(124,33);
+
+
+        // Asynchronous is a non-blocking architecture, so the execution of one task isn't dependent on another. Tasks can run simultaneously.
+        // Synchronous is a blocking architecture, so the execution of each operation depends on completing the one before it. Each task requires an answer before moving on to the next iteration
+
+        function cal(){
+            function add(a,b){
+                console.log(a+b);
+            }
+            function mul(x,y){
+                console.log(x*y);
+            }
+            function sub(p,r){
+                console.log(p-r);
+            }
+            add(3,4);
+            sub(9,6);
+            mul(53493547354848954384387534854387438754387945387354859534895483,6);
+        }
+        cal();
+
+
+        // Anonymous Function :----   Anonymous function in Javascript is a function that does not have any name associated with it. They are typically used as arguments to other functions or assigned to variables. const arr = [-1, 0, 5, 6]; // The filter method is passed an anonymous function.
+
+        let msg=function(){
+            console.log("Hello ABES");
+            // console.log(typeof(msg));
+        }
+        msg();
+        // Arrow function:--- short code for above function i.e. to make the code short
+        let msg1=()=>console.log("Hello ABESEC");
+        msg1();
+
+        // Arrow function using multiple lines
+        let msg2=(a,b)=>{
+            var num1=a;
+            var num2=b;
+            var res=num1/num2;
+            console.log("Result is "+ res);
+        }
+        msg2(10,20);
+
+        // IIFE:- An IIFE (Immediately Invoked Function Expression) is a JavaScript function that executes immediately upon its definition. It provides a way to encapsulate code and create a private scope, allowing for the isolation of variables and preventing interference with other parts of the code.
+
+        (function(){
+            console.log("Hello Tushar!");
+        })();
+        // short code for above function
+        (msg=>console.log("Hello !!!!!"))();
+
+
+
+    </script>
+</body>
+</html>
