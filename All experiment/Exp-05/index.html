@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 5</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="super">
+    <div class="container">
+        <h1>Employee Salary Management System</h1>
+
+        <table  border="0" align="center" cellpadding="15">
+            <tr>
+                <td><label for="">Employee Name</label></td>
+                <td>:</td>
+                <td><input type="text" id="name" placeholder="Employee Name"></td>
+            </tr>
+            <tr>
+                <td><label for="">Employee Id</label></td>
+                <td>:</td>
+                <td><input type="text" id="empId" placeholder="Employee ID"></td>
+            </tr>
+            <tr>
+                <td><label for="">Employee Salary</label></td>
+                <td>:</td>
+                <td><input type="number" id="salary" placeholder="Employee Salary"></td>
+            </tr>
+            <tr>
+                <td><label for="">Employee Department</label></td>
+                <td>:</td>
+                <td><input type="text" id="dept" placeholder="Employee Department"></td>
+            </tr>
+            <tr>
+                <td><button onclick="addEmployee()">Add Employee</button></td>
+                <td><button onclick="displayEmployees()">Display All</button></td>
+                <td><button onclick="filterSalary()">Salary > 50000</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="totalSalary()">Total Salary</button></td>
+                <td><button onclick="averageSalary()">Average Salary</button></td>
+                <td><button onclick="countDepartment()">Count by Department</button></td>
+            </tr>
+        </table>
+        <div id="output"></div>
+        
+    </div>
+    </div>
+
+    <div class="madeby">
+        <h3>Created by Tushar Chaudhary</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object- collection(pair) of keys(properties) and its value
+        // create an object- using literal way and new keyword
+
+        let student={
+            name:"John", 
+            age:23, 
+            isMarried:false, 
+            address:{
+                streetNo:23,
+                area:"Ghaziabad",
+                pincode:203207,
+                city:"GZB"
+            },
+            education:["10th", "12th", "B.Tech"],
+            degree:"B.Tech",
+            branch:"CSE",
+            year:2026,
+            getInfo:function(){
+                return "my current education is "+ student.degree;
+            }
+        };
+        // access object's keys using dot notation
+        console.log(student.address.pincode);   //object      
+        console.log(student.education[2]);     //array        
+        console.log(student.getInfo());        //function
+        console.log(typeof(student));   
+        
+        // find keys in object
+        console.log('name' in student);
+
+        // delete keys from object
+        console.log(delete student.name);
+        console.log(student);
+
+        // find length of objects
+        let keyslength=Object.keys(student);
+        console.log(keyslength.length);
+
+        // iterate keys of object
+        for(let i=0; i<keyslength; i++){
+            console.log(student[keyslength[i]]);
+        }
+
+        // iterate keys of object using for...in loop
+        for(let x in student){
+            console.log(student[x]);
+        }
+
+
+
+        // Create object using new keyword
+        let myInfo=new Object();
+        myInfo.name="Tushar";
+        myInfo.age=23;
+        myInfo.address="Dadri";
+        myInfo.mob=96336723327;
+        myInfo.isMarried=false;
+        console.log(myInfo.name);                // using dot notation
+        console.log(myInfo['address']);         // using [] notation
+        
+
+    </script>
+</body>
+</html>
