@@ -1,0 +1,24 @@
+{
+  "name": "wd-2nd-abes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TusharChaudhary-tcc/WD-2nd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TusharChaudhary-tcc/WD-2nd/issues"
+  },
+  "homepage": "https://github.com/TusharChaudhary-tcc/WD-2nd#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
