@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Responsive Flex Layout</title>
+</head>
+
+<body class="bg-gray-100 p-4">
+
+  <!-- Main Container -->
+  <div class="max-w-5xl mx-auto space-y-4">
+    <!--navbar-->
+    <nav class="bg-gray-800 text-white p-4 rounded-lg">
+      <ul class="flex space-x-4">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-red-900 text-white text-center p-5 rounded-lg">
+      <h2 class="text-2xl font-bold">Header</h2>
+    </header>
+
+    <!-- Content Section -->
+    <section class="flex flex-col md:flex-row gap-4">
+
+      <!-- Box 1 -->
+      <div class="flex-2 bg-black text-white  p-6 rounded-lg text-center">
+        <h2 class="text-xl font-semibold">Box 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dignissimos omnis sequi ipsum excepturi qui, veritatis earum provident mollitia unde nihil quidem. Iste odio minus soluta sequi cupiditate, nihil esse.</p>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="flex-1 bg-red-700 text-white  p-6 rounded-lg text-center">
+        <h2 class="text-xl font-semibold">Box 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequuntur at doloribus possimus atque id, debitis deleniti ipsa sit, corrupti sunt rem totam mollitia, quidem voluptatum veritatis quisquam aperiam cumque?</p>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="flex-1 bg-blue-900 text-white  p-6 rounded-lg text-center">
+        <h2 class="text-xl font-semibold">Box 3</h2>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-lime-900 text-white text-center p-5 rounded-lg">
+      <h2 class="text-2xl font-bold">Footer</h2>
+    </footer>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <title>Responsive Layout</title>
+</head>
+
+<body class="bg-gray-100 p-4">
+
+  <!-- Main Container -->
+  <div class="max-w-5xl mx-auto">
+<!--navbar-->
+    <nav class="bg-gray-800 text-white p-4 rounded-lg mb-4">
+      <ul class="flex justify-end space-x-4">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Header -->
+    <header class="bg-red-900 text-white text-center p-5 rounded-lg">
+      <h2 class="text-2xl font-bold">Header</h2>
+    </header>
+
+    <!-- Responsive Boxes -->
+    <section class="grid lg:grid-cols-3 gap-4 my-4" style="height: 300px;">
+
+      <div class="bg-red-500 text-white p-6 rounded-lg text-center shadow-md">
+        Box 1
+      </div>
+
+      <div class="bg-green-500 text-white p-6 rounded-lg text-center shadow-md">
+        Box 2
+      </div>
+
+      <div class="bg-blue-500 text-white p-6 rounded-lg text-center shadow-md">
+        Box 3
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-lime-900 text-white text-center p-5 rounded-lg">
+      <h2 class="text-2xl font-bold">Footer</h2>
+    </footer>
+
+  </div>
+
+</body>
+</html>
